@@ -44,15 +44,6 @@
     $ cd nodetest1 && npm install
 
 
--- MySQL Revision
-<1> select date(curdate()); -- extract only date
-<2> query helper from dual
-    INSERT INTO youzanpool ('tid', 'podesc', 'created')
-    SELECT 'E20160829125929049223838', '{...}', '2016-08-29 16:17:46'
-    FROM dual
-    WHERE NOT EXISTS (SELECT 1 FROM youzanpool WHERE tid = 'E20160829125929049223838');
-
-
 -- Tool Revision
 <1> curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://123.150.130.151:68/TJSTOWebService/ExpressWebService.asmx?WSDL
 

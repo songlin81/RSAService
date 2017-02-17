@@ -21,7 +21,7 @@
     $npm prune
 <2> $ sudo apt-get install mysql-server
     $ sudo service mysql stop/start
-    $ mysql -u root -p
+    $ mysql -h localhost -u root -p
 <3> For global installation:
     $ npm install -g mysql
     For local installation:
@@ -33,6 +33,11 @@
 <4> Initiate json and update it with the listed dependencies.
     $ npm init
     $ npm install youzan-sdk --save
+<5> usage of Forever
+    $ forever start PollService.js 
+    $ forever list
+    $ forever stopall
+    $ forever stop <pid>
 
 
 -- Shell Revision
@@ -41,6 +46,7 @@
     1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,
     30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,
     56,57,58,59,60
+<3> $ chmod u+x startup
 
 
 -- MySQL Revision

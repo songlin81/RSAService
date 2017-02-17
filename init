@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Author: Lin, Song
+# Date: 2016.09.07
+# Creation of private and public key pair.
+# chmod u+x init
+
+pubKey="../keypair/my-server.key.pem"
+priKey="../keypair/my-server.pub"
+
+if [ -f "$pubKey" ]
+then
+    echo "$pubKey removed."
+    rm -f $pubKey
+else
+	echo "$pubKey generated."
+	openssl genrsa -out ../keypair/my-server.key.pem 1024
+fi
+
+[ -f "$priKey" ] \
+&& { rm -f $priKey; echo "$priKey removed."; } \
+|| { openssl rsa -in ../keypair/my-server.key.pem -pubout -out ../keypair/my-server.pub; echo "$priKey generated."; }

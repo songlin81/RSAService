@@ -1,0 +1,11 @@
+{
+  "name": "YouZanOrderService",
+  "version": "1.0.0",
+  "description": "YouZan Order Service",
+  "main": "RSAService.js",
+  "repository": "",
+  "author": "Song Lin <koalainuwo@hotmail.com>",
+  "dependencies": {
+    "ursa": "*"
+  }
+}

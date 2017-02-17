@@ -1,11 +1,12 @@
 # RSAService
 Node service to test out RSA
 
--- Node Revision
+-- App Revision
 <1> require 'fs', fs.readFileSync, 
 <2> require 'ursa', ursa.createPublichKey, 
 <3> public key: crt.encrypt -> private key: key.decrypt
 <4> private key: key.privateEncrypt -> public key: crt.publicDecrypt
+
 
 -- Bash Revision
 <1> if [ -f "$pubKey" ]
@@ -15,8 +16,10 @@ Node service to test out RSA
 && { rm -f $priKey; echo "$priKey removed."; } \
 || { openssl rsa -in ../keypair/my-server.key.pem -pubout -out ../keypair/my-server.pub; echo "$priKey generated."; }
 
+
 -- Node Installation Revision
-<1> tba
+<1> $npm prune  #server un-used references
+
 
 -- Shell Revision
 <1> $ date ==> Fri Aug 26 09:22:24 GMT-8 2016
@@ -25,9 +28,11 @@ Node service to test out RSA
     30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,
     56,57,58,59,60
 
+
 -- MySQL Revision
 <1> select date(curdate()); -- extract only date
 
+
 -- Tool Revision
 <1> curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://123.150.130.151:68/TJSTOWebService/ExpressWebService.asmx?WSDL
-<2> 
+

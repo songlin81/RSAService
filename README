@@ -26,4 +26,8 @@ Node service to test out RSA
     56,57,58,59,60
 
 --MySQL Revision
-<1> 
+<1> select date(curdate()); -- extract only date
+
+--Tool Revision
+<1> curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://123.150.130.151:68/TJSTOWebService/ExpressWebService.asmx?WSDL
+<2> 

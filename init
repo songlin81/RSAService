@@ -14,7 +14,7 @@ then
     rm -f $pubKey
 else
 	echo "$pubKey generated."
-	openssl genrsa -out ../keypair/my-server.key.pem 1024
+	openssl genrsa -out ../keypair/my-server.key.pem 2048
 fi
 
 [ -f "$priKey" ] \

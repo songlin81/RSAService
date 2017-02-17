@@ -38,6 +38,10 @@
     $ forever list
     $ forever stopall
     $ forever stop <pid>
+<6> ExpressJS
+    $ sudo apt-get install node-express
+    $ express nodetest1
+    $ cd nodetest1 && npm install
 
 
 -- Shell Revision

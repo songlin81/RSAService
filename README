@@ -19,7 +19,18 @@ Node service to test out RSA
 
 -- Node Installation Revision
 <1> $npm prune  #server un-used references
-
+<2> $ sudo apt-get install mysql-server
+    $ sudo service mysql stop/start
+    $ mysql -u root -p
+<3> For global installation:
+    $ npm install -g mysql
+    For local installation:
+    (1) Add it to your package.json in the dependencies:
+        "dependencies": {
+            "mysql": "~2.3.2",
+             ...
+    (2) $npm install
+<4> 
 
 -- Shell Revision
 <1> $ date ==> Fri Aug 26 09:22:24 GMT-8 2016
@@ -31,7 +42,7 @@ Node service to test out RSA
 
 -- MySQL Revision
 <1> select date(curdate()); -- extract only date
-
+<2> 
 
 -- Tool Revision
 <1> curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://123.150.130.151:68/TJSTOWebService/ExpressWebService.asmx?WSDL

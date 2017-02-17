@@ -1,5 +1,4 @@
-# RSAService
-Node service to test out RSA
+# Memo
 
 -- App Revision
 <1> require 'fs', fs.readFileSync, 
@@ -18,7 +17,8 @@ Node service to test out RSA
 
 
 -- Node Installation Revision
-<1> $npm prune  #server un-used references
+<1> Purge server un-used references
+    $npm prune
 <2> $ sudo apt-get install mysql-server
     $ sudo service mysql stop/start
     $ mysql -u root -p
@@ -30,7 +30,10 @@ Node service to test out RSA
             "mysql": "~2.3.2",
              ...
     (2) $npm install
-<4> 
+<4> Initiate json and update it with the listed dependencies.
+    $ npm init
+    $ npm install youzan-sdk --save
+
 
 -- Shell Revision
 <1> $ date ==> Fri Aug 26 09:22:24 GMT-8 2016
@@ -42,7 +45,7 @@ Node service to test out RSA
 
 -- MySQL Revision
 <1> select date(curdate()); -- extract only date
-<2> 
+
 
 -- Tool Revision
 <1> curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://123.150.130.151:68/TJSTOWebService/ExpressWebService.asmx?WSDL

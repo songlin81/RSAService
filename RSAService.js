@@ -8,7 +8,7 @@ var fs = require('fs')
   , ursa = require('ursa')
   , crt
   , key
-  , msg = 'YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouYouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan WebYouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan WebZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service ResponouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messages..YouZan Web Service Responding messagesding messages...'
+  , msg = 'YouZan Web Service Responding messages...YouZan Web Service Responding messagesding messages...'
   , relMsg;
 
 console.log(msg.length);
